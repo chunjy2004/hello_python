@@ -1,0 +1,7 @@
+import os
+
+_a = '#'
+
+for n in range(10, 1, -1):
+  print(_a*n, '\a')
+  os.system('cls')
