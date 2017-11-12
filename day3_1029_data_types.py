@@ -32,7 +32,7 @@ def test5():
         _a_str = input('Guess number = ')
         print(_a_str)
 
-        if _a_str == '13':
+        if _a_str == '13':5
             print('Friday the 13th, --- ok out')
             break
         time.sleep(0.3)
@@ -53,9 +53,9 @@ while True:
     a = int(input("Guess number what your computer is thinking = "))
 
     if cpu > a:
-        print('\nsmaller than you thought')
-    elif cpu < a:
         print('\nbigger than you thought')
+    elif cpu < a:
+        print('\nsmaller than you thought')
     elif cpu == a:
         print("""\nCongradulation, %s! \nThat's what I thought"""% (nick))
 
