@@ -46,7 +46,7 @@ INTRODUCE = """
 
     Guess the number your computer has..."""
 
-nick = input('Your Name? : ')
+nick = input('Your Name? : ')     
 print('\n\tWelcome %s..... \n\t%s\n'% (nick, INTRODUCE))
 cpu = random.randint(1,100)
 while True:
