@@ -38,25 +38,25 @@ def test5():
         time.sleep(0.3)
 
 
+def guessing numbers():
+    INTRODUCE = """
+        Your computer has a number one to hundred.
 
-INTRODUCE = """
-    Your computer has a number one to hundred.
+        You have only ten chance to guess.
 
-    You have only ten chance to guess.
+        Guess the number your computer has..."""
 
-    Guess the number your computer has..."""
+    nick = input('Your Name? : ')
+    print('\n\tWelcome %s..... \n\t%s\n'% (nick, INTRODUCE))
+    cpu = random.randint(1,100)
+    while True:
+        a = int(input("Guess number what your computer is thinking = "))
 
-nick = input('Your Name? : ')     
-print('\n\tWelcome %s..... \n\t%s\n'% (nick, INTRODUCE))
-cpu = random.randint(1,100)
-while True:
-    a = int(input("Guess number what your computer is thinking = "))
+        if cpu > a:
+            print('\nbigger than you thought')
+        elif cpu < a:
+            print('\nsmaller than you thought')
+        elif cpu == a:
+            print("""\nCongradulation, %s! \nThat's what I thought"""% (nick))
 
-    if cpu > a:
-        print('\nbigger than you thought')
-    elif cpu < a:
-        print('\nsmaller than you thought')
-    elif cpu == a:
-        print("""\nCongradulation, %s! \nThat's what I thought"""% (nick))
-
-        break
+            break
